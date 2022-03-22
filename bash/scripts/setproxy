@@ -1,0 +1,2 @@
+#!/bin/bash
+export HTTPS_PROXY='http://proxy-we1-dev.*****************:8080/'
