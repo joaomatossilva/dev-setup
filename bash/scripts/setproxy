@@ -1,2 +1,3 @@
 #!/bin/bash
-export HTTPS_PROXY='http://proxy-we1-dev.*****************:8080/'
+export HTTPS_PROXY='http://proxy-we1-dev.a******.****:8080/'
+export KUBECONFIG=~HOME/.kube/plat-auto-config
