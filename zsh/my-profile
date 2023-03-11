@@ -1,0 +1,12 @@
+# oh-my-posh Setup
+eval "$(oh-my-posh prompt init zsh --config $(brew --prefix oh-my-posh)/share/oh-my-posh/themes/craver.omp.json)"
+
+# setup Z - Jump Around
+. /opt/z/z.sh
+
+#git functions
+g () {
+  git $@
+}
+
+
