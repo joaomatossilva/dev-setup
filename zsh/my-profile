@@ -1,5 +1,6 @@
 # oh-my-posh Setup
-eval "$(oh-my-posh prompt init zsh --config $(brew --prefix oh-my-posh)/share/oh-my-posh/themes/craver.omp.json)"
+#eval "$(oh-my-posh prompt init zsh --config $(brew --prefix oh-my-posh)/share/oh-my-posh/themes/craver.omp.json)"
+eval "$(oh-my-posh prompt init zsh --config $(brew --prefix oh-my-posh)/themes/craver.omp.json)"
 
 # setup Z - Jump Around
 . /opt/z/z.sh
@@ -9,4 +10,12 @@ g () {
   git $@
 }
 
-
+#docker-helpers
+docker-start() {
+  sudo systemctl start docker.service
+  sudo systemctl start containerd.service
+}
+docker-stop() {
+  sudo systemctl stop docker.service
+  sudo systemctl stop containerd.service
+}
